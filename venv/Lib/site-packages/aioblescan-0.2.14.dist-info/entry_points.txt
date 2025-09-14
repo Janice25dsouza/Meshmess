@@ -1,0 +1,3 @@
+[console_scripts]
+aioblescan = aioblescan.__main__:main
+
