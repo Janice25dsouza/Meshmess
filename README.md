@@ -1,6 +1,9 @@
-# Meshmess
+# Meshmess - ForestLink
 
-Meshmess is a peer-to-peer chat application that dynamically routes messages using Dijkstra’s algorithm. It is designed for local networks without a central server, providing seamless communication between devices. The project features a user-friendly terminal interface for chatting and a Dashboard for monitoring the MeshNetwork in real time. Using Bluetooth Low Energy (BLE), WebSockets, and efficient algorithms, Meshmess enables lightweight, resilient communication across devices.
+**Meshmess** a peer-to-peer mesh networking app that enables communication when conventional networks fail and works through Wi-Fi Direct with multi-hop routing powered by Dijkstra’s algorithm.
+
+**ForestLink** is a a BLE mesh system  where roadside nodes relay data to a central dashboard, with monitoring.
+
 
 The project is built with Python 3, Rust, and JavaScript. Python handles the core chat logic using libraries such as `asyncio`, `socket`, `networkx`, `colorama`, and `aioconsole`. Rust powers performance-critical operations with `Tokio` and BLE integration through `Bleak`. The frontend dashboard is built with Vite and WebSockets to monitor the MeshNetwork visually.
 
@@ -16,11 +19,15 @@ The project is built with Python 3, Rust, and JavaScript. Python handles the cor
 
 ## How to Run
 
+**Meshmess:**
+
 To start the P2P Chat Application, navigate to the chat folder and run the main script:
 ```bash
 cd chat_mesh_wifi
 python main.py
 ```
+**ForestLink:**
+
 For the MeshNetwork Monitoring system, first start the mesh node:
 ```bash
 cd python
